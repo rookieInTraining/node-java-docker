@@ -18,7 +18,7 @@ RUN mkdir -p /usr/share/man/man1 && \
     apt-get update -y && \
     apt-get install -y openjdk-8-jdk
 
-# Install Testim-Cli and Gradle
+# Install Gradle
 RUN echo "Downloading Gradle" \
   && wget -O gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" \
   && echo "Installing Gradle" \
